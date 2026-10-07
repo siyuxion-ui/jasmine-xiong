@@ -128,10 +128,16 @@
   .paper p strong{color:var(--ink)}
   .paper .q{border-left:2px solid var(--hairline);padding-left:18px;margin:20px 0}
 
-  /* research condensed */
-  .papers-cond{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:56px;align-items:start}
-  .pcard{border-top:1px solid var(--hairline);padding-top:28px}
-  .pcard h3{font-family:'Newsreader',serif;font-size:26px;font-weight:500;line-height:1.3;letter-spacing:-.01em;margin-bottom:18px}
+  /* research additions */
+  .rqs{margin:0 0 15px 22px;color:var(--ink-soft);font-size:16.5px;line-height:1.72}
+  .rqs li{margin-bottom:8px}
+  .aicp{margin-top:44px;padding-top:32px;border-top:1px solid #2A2C3A;max-width:44em}
+  .paper-k.dk{color:#8E8B80}
+  .interests{margin-top:22px;max-width:36em}
+  .interests .paper-k{margin-bottom:6px}
+  .interests p{color:var(--ink-soft);font-size:15px;line-height:1.7}
+  .about-cta{margin-top:26px}
+  .about-btn{color:var(--ink)!important;border-color:var(--hairline)!important}
   .plogic,.pfinding{color:var(--ink-soft);font-size:15.5px;line-height:1.7;margin-bottom:14px}
   .plogic strong,.pfinding strong{color:var(--ink)}
   .rlink{font-family:'Space Mono',monospace;font-size:12.5px;letter-spacing:.08em;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:2px}
@@ -195,7 +201,6 @@
     .about-grid{grid-template-columns:1fr;gap:28px}
     .about-grid .pwrap{max-width:280px}
     .mk-grid{grid-template-columns:1fr;gap:32px}
-    .papers-cond{grid-template-columns:1fr}
     .ch-head{flex-direction:column;gap:8px;align-items:flex-start}
     .hero{padding-top:110px}
     section{padding:60px 0}
@@ -209,11 +214,11 @@
   <div class="wrap">
     <a class="brand" href="#top">JASMINE XIONG</a>
     <ul>
-      <li><a href="#fieldwork">Fieldwork</a></li>
+      <li><a href="#top">Home</a></li>
       <li><a href="#research">Research</a></li>
-      <li><a href="#markethon">Markethon</a></li>
+      <li><a href="#practice">Practice</a></li>
+      <li><a href="#community">Community</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 </nav>
@@ -230,7 +235,7 @@
         </h1>
         <p class="hero-sub">Jasmine Xiong — Co-founder of AI Markethon · Bilingual AI creator · USC MAT-TESOL '26</p>
         <div class="stats">
-          <div class="stat"><div class="n" data-count="43" data-format="int">0</div><div class="l">AI videos</div></div>
+          <div class="stat"><div class="n" data-count="43" data-format="int">0</div><div class="l">AI-related videos</div></div>
           <div class="stat"><div class="n" data-count="3.2" data-format="mplus">0</div><div class="l">Million views</div></div>
           <div class="stat"><div class="n" data-count="500" data-format="kplus">0</div><div class="l">Followers, all platforms</div></div>
         </div>
@@ -244,15 +249,16 @@
 
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track">
-    <span>AI adoption is a communication problem</span><span class="mq-dot">✦</span><span>Need discovery</span><span class="mq-dot">✦</span><span>Human–AI communication</span><span class="mq-dot">✦</span><span>500K+ followers</span><span class="mq-dot">✦</span><span>AI adoption is a communication problem</span><span class="mq-dot">✦</span><span>Need discovery</span><span class="mq-dot">✦</span><span>Human–AI communication</span><span class="mq-dot">✦</span><span>500K+ followers</span><span class="mq-dot">✦</span>
+    <span>AI adoption is not only a technical problem — it is also a communication problem</span><span class="mq-dot">✦</span><span>Need discovery</span><span class="mq-dot">✦</span><span>Human–AI communication</span><span class="mq-dot">✦</span><span>500K+ followers</span><span class="mq-dot">✦</span><span>AI adoption is not only a technical problem — it is also a communication problem</span><span class="mq-dot">✦</span><span>Need discovery</span><span class="mq-dot">✦</span><span>Human–AI communication</span><span class="mq-dot">✦</span><span>500K+ followers</span><span class="mq-dot">✦</span>
   </div>
 </div>
 
-<section class="dark" id="fieldwork">
+<section class="dark" id="practice">
   <div class="wrap">
-    <div class="sec-head rv"><span class="sec-no">01</span><span class="sec-label">Fieldwork</span></div>
+    <div class="sec-head rv"><span class="sec-no">01</span><span class="sec-label">Practice</span></div>
     <h2 class="rv">My research starts where AI meets real users.</h2>
-    <p class="lede rv">Inside the feeds, comments, and channels where adoption actually happens — <strong>43 bilingual AI videos</strong> since May 2026, each one a small experiment in how capabilities get translated for everyday audiences.</p>
+    <p class="lede rv">Inside the feeds, comments, and channels where adoption actually happens — <strong>43 AI-related videos</strong> since May 2026, including ~10 sponsored AI product collaborations and a 12-video series exploring AI agents and workflows. Each one is a small experiment in how capabilities get translated for everyday audiences.</p>
+    <p class="lede rv" style="margin-top:14px">My creator practice gives me direct exposure to how emerging technologies are framed, interpreted, questioned, and experimented with outside controlled research settings.</p>
 
     <div class="fw-row">
       <div class="vitem rv"><div class="slot card" id="cardSlot1"><span class="play"></span><span class="t">AI Video 01</span><span class="s">loading…</span></div><p class="vcap sm"><strong>POV: practicing English with Doubao.</strong><br>320K views — the comment section became a live lab of users figuring out what to ask AI.</p></div>
@@ -271,6 +277,11 @@
       <div class="ch"><a href="https://youtube.com/@jasminexiong529" target="_blank" rel="noopener"><p class="p">YouTube</p><p class="h">@jasminexiong529</p><p class="f">Long-form builds</p></a></div>
       <div class="ch"><a href="https://www.linkedin.com/in/siyu-xiong-6a2b9740a" target="_blank" rel="noopener"><p class="p">LinkedIn</p><p class="h">Siyu Xiong</p><p class="f">Background &amp; experience</p></a></div>
     </div>
+    <div class="aicp rv">
+      <p class="paper-k dk">AI Communication in Practice</p>
+      <p class="lede">Through sponsored and organic content involving consumer AI products such as Doubao and Qwen, I have observed the shift from conversational and voice-based AI toward agents, skills, application building, and multi-step workflows.</p>
+      <p class="lede" style="margin-top:12px">These experiences motivated my research into the gap between technical capability and everyday understanding and use.</p>
+    </div>
   </div>
 </section>
 
@@ -278,32 +289,48 @@
   <div class="wrap">
     <div class="sec-head rv"><span class="sec-no">02</span><span class="sec-label">Research</span></div>
     <h2 class="rv">What I want to spend a PhD on.</h2>
-    <p class="lede rv">Two pieces of writing that say it better than any summary — a research statement and a research program.</p>
+    <p class="lede rv">A working paper in progress — and the research agenda growing out of it.</p>
 
-    <div class="papers-cond">
-      <article class="pcard rv">
-        <p class="paper-k">Research statement</p>
-        <h3>Looking inward through the machine: need discovery in human-AI communication</h3>
-        <p class="plogic"><strong>Logic.</strong> An old information-science problem — people can't fully say what they need before they start looking (Taylor's "question negotiation," Belkin's ASK) — radicalized by generative AI, whose responses reshape the question itself. Frontier models iterate too fast for any curriculum, so people learn by doing. The thesis: needs are discovered through interaction; the machine is a mirror. Three questions follow — discovery in interaction, scaffolding the inward turn, from discovery to adoption — grounded in a creator field site and aimed at the I School tradition.</p>
-        <p class="pfinding"><strong>Finding.</strong> People don't express pre-existing needs; they figure out what they need through iterative communication with AI. Each round of back-and-forth sharpens the need itself.</p>
+    <div class="papers">
+      <article class="paper rv">
+        <p class="paper-k">Current Research</p>
+        <h3>From Features to Workflows: How Creators Translate AI Capabilities for Everyday Audiences</h3>
+        <p class="plogic"><strong>Status.</strong> Sole-author working paper · Manuscript in preparation.</p>
+        <h4>Research problem</h4>
+        <p>As AI systems move from discrete features toward agents, skills, and multi-step workflows, technical capability does not automatically translate into user understanding or perceived value. This study examines how creators mediate that gap.</p>
+        <h4>Research questions</h4>
+        <ol class="rqs">
+          <li>How do creators translate increasingly complex AI capabilities into accessible use cases?</li>
+          <li>What communication strategies make AI capabilities understandable, useful, and actionable?</li>
+          <li>What barriers to understanding, relevance, agency, trust, and potential adoption emerge in audience responses?</li>
+        </ol>
+        <h4>Data / Method</h4>
+        <p>Douyin creator content + publicly visible audience responses. Systematic content analysis + thematic analysis.</p>
+        <p><em>Data collection in progress.</em></p>
+        <p class="plogic"><strong>Emerging question.</strong> Whether creator-mediated AI communication simply helps users satisfy existing needs — or also helps them discover uses they had not previously articulated.</p>
         <a class="rlink" href="research-statement.html">Read the full statement <span>&rarr;</span></a>
       </article>
-      <article class="pcard rv d1">
-        <p class="paper-k">Research program</p>
-        <h3>What I've been circling, and what I'd like to study</h3>
-        <p class="plogic"><strong>Logic.</strong> 43 videos and 3.2M views taught me that people arrive with vague itches, not tasks. The gap between AI capability and adoption is a communication problem. Three directions, macro to micro: communication routes (the popular vs. the elite), creators as informal infrastructure, inward discovery in interaction. The theoretical stake: the real bottleneck sits before the task is ever defined. The normative stake: equity — a mirror that helps you think vs. a nanny that decides for you.</p>
-        <p class="pfinding"><strong>Finding.</strong> AI adoption is a communication problem — and the vernacular route, not the elite one, is what lets ordinary people discover what to ask.</p>
-        <a class="rlink" href="research-program.html">Read the full program <span>&rarr;</span></a>
+      <article class="paper rv">
+        <p class="paper-k">Emerging Research Agenda</p>
+        <h3>Between capability and everyday use</h3>
+        <p class="plogic">My current creator-focused study is an entry point into a broader question: what happens between increasingly capable AI systems and their sustained adoption in everyday life and work?</p>
+        <h4>Mental Models &amp; Communication</h4>
+        <p>How do people form useful mental models of unfamiliar AI capabilities?</p>
+        <h4>Trust &amp; Adoption</h4>
+        <p>How do communication and social context shape trust, experimentation, and sustained use?</p>
+        <h4>AI in Everyday Workflows</h4>
+        <p>How do AI agents move from impressive demonstrations into routine individual and organizational practices?</p>
       </article>
     </div>
   </div>
 </section>
 
-<section class="dark" id="markethon">
+<section class="dark" id="community">
   <div class="wrap">
-    <div class="sec-head rv"><span class="sec-no">03</span><span class="sec-label">Testbed</span></div>
-    <h2 class="rv">A field testbed<br>for AI adoption.</h2>
-    <p class="lede rv">Most AI products don't die on capability — they die on translation: no one can picture what they're for. I co-founded AI Markethon as a live site for watching that translation happen. 50–100 builders, marketers, and creators get 24 hours to turn raw AI capability into launches real users can understand — and I study how they do it: how a model becomes a story, what kind of demo makes a stranger say "I need that," which pitches land and which evaporate. The competition compresses months of go-to-market into a day, which makes the communication work visible — and observable. I'm Co-Founder &amp; Marketing Lead: I design the event, and I treat it as a field site.</p>
+    <div class="sec-head rv"><span class="sec-no">03</span><span class="sec-label">Community</span></div>
+    <h2 class="rv">Markethon US</h2>
+    <p class="lede rv">An AI × GTM community initiative connecting founders, marketers, creators, and users around the challenge of turning emerging technologies into real-world value.</p>
+    <p class="lede rv" style="margin-top:14px">My work with Markethon expands my perspective beyond creator–audience communication to the broader ecosystem through which AI products are built, positioned, communicated, and adopted.</p>
     <div class="mk-grid">
       <div class="rv"><img class="mk-shot" src="assets/mk-hero.jpg" alt="AI Markethon — official site hero, Hollywood Hills mansion at dusk" loading="lazy"></div>
       <div class="rv d1">
@@ -335,32 +362,37 @@
         <p class="cap">Off duty — still observing</p>
       </div>
       <div class="about-body rv d1">
-        <p>Trained in <strong>language teaching</strong> (USC MAT-TESOL), I treat adoption as a <strong>learning problem</strong>: people don't adopt what they can't understand — and understanding is built, message by message, by someone they trust.</p>
-        <p>Years on the <strong>market side</strong> — campaigns, a 435K-follower creator account, co-founding AI Markethon — taught me how capabilities become relevance, relevance into trust, trust into use. Now I'm turning that practice into research.</p>
+        <p>My path to human-AI research began in <strong>language and communication</strong>, moved through <strong>global brand marketing</strong> and <strong>creator practice</strong>, and eventually led me to a recurring question: why does technical capability so often fail to become meaningful human use?</p>
+        <p>Trained in <strong>language teaching</strong> (USC Rossier, MAT-TESOL), I treat adoption as a <strong>learning problem</strong>: people don't adopt what they can't understand — and understanding is built, message by message, by someone they trust. Years on the market side — campaigns, a 435K-follower creator account, co-founding AI Markethon — taught me how capabilities become relevance, relevance into trust, trust into use. Now I'm turning that practice into research.</p>
         <div class="edu">
-          <div><span><strong>University of Southern California</strong> — M.A. TESOL, Rossier</span><span class="d">Expected Dec 2026</span></div>
+          <div><span><strong>University of Southern California</strong> — MAT-TESOL Candidate, Rossier School of Education</span><span class="d">Expected Dec 2026</span></div>
           <div><span><strong>Nanjing Univ. of Posts &amp; Telecomms</strong> — B.A. English</span><span class="d">2020</span></div>
           <div><span><strong>Shih Hsin University</strong>, Taipei — Exchange, Communications</span><span class="d">2017–2018</span></div>
         </div>
         <div class="paperline">
           <span class="k">Manuscript in preparation</span>
-          <em>Looking Inward Through the Machine: A Field Study of Need Discovery in Creator-Mediated AI Adoption</em> — sole-authored field study of creator-scaffolded need discovery.
+          <em>From Features to Workflows: How Creators Translate AI Capabilities for Everyday Audiences</em> — sole-author working paper · manuscript in preparation.
+        </div>
+        <div class="interests">
+          <p class="paper-k">Research Interests</p>
+          <p>Human-AI Communication · Technology Adoption &amp; Trust · Digital Platforms &amp; Creator-Mediated Communication · AI in Everyday Workflows</p>
+        </div>
+        <div class="interests">
+          <p class="paper-k">Methods I Hope to Deepen</p>
+          <p>Computational social science, behavioral experimentation, and longitudinal digital-trace analysis.</p>
+        </div>
+        <div class="btn-row about-cta">
+          <a class="btn magnetic about-btn" href="Xiong_Siyu_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+        <div class="contact-links rv" style="margin-top:26px">
+          <a class="magnetic" href="mailto:siyuxion@usc.edu">siyuxion@usc.edu</a>
+          <a href="https://www.linkedin.com/in/siyu-xiong-6a2b9740a" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://markethon.us" target="_blank" rel="noopener">markethon.us</a>
         </div>
       </div>
     </div>
   </div>
-</section>
-
-<section class="contact" id="contact">
   <div class="wrap">
-    <div class="sec-head rv"><span class="sec-no">05</span><span class="sec-label">Contact</span></div>
-    <h2 class="rv">Open to research conversations.</h2>
-    <p class="lede rv">Applying for Fall 2027 PhDs in human-AI communication and technology adoption.</p>
-    <div class="contact-links rv">
-      <a class="magnetic" href="mailto:siyuxion@usc.edu">siyuxion@usc.edu</a>
-      <a href="https://www.linkedin.com/in/siyu-xiong-6a2b9740a" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://markethon.us" target="_blank" rel="noopener">markethon.us</a>
-    </div>
     <footer>
       <span>© <span id="yr">2026</span> Jasmine Xiong</span>
       <span>Los Angeles, CA</span>
@@ -519,7 +551,7 @@
   window.addEventListener('scroll', onNav, {passive:true}); onNav();
 
   /* ---------- 9. Count-up stats ---------- */
-  const fmt = {int:v=>Math.round(v).toString(), mplus:v=>v.toFixed(1)+'M+', kplus:v=>Math.round(v)+'K+'};
+  const fmt = {int:v=>Math.round(v).toString(), intplus:v=>Math.round(v)+'+', mplus:v=>v.toFixed(1)+'M+', kplus:v=>Math.round(v)+'K+'};
   const cio = new IntersectionObserver((es)=>{
     es.forEach(e=>{
       if(!e.isIntersecting) return;
